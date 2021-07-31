@@ -1492,6 +1492,13 @@ hr.line-divider{
 	z-index:3
 }
 
+.pink-heart-big{
+	color:#f0394d; 
+	font-size:58px; 
+	position:relative; 
+	z-index:3
+}
+
 .white-heart{
 	color:#FFF; 
 	font-size:18px; 
