@@ -204,7 +204,7 @@
 /*===============================================*/
 body{
 	font-family: 'Arvo', serif;	
-	color:#6a6a6a;
+	color:#1a1a1a;
 	font-size:15px;
 }
 
@@ -2521,8 +2521,8 @@ form .has-error .btn-primary{
 }
 
 #counting{
-	font-size:65px; 
-	line-height:50px
+	font-size:55px; 
+	line-height:120px
 }
 
 #down{
