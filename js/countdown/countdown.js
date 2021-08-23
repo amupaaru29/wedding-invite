@@ -12,12 +12,16 @@
 			let now = new Date().getTime(),
 				daysLeft = countDown - now;
 
-			document.getElementById("days").innerText = Math.floor(daysLeft / (day)),
+		document.getElementById("days").innerText = Math.floor(daysLeft / (day)),
             document.getElementById("hours").innerText = Math.floor((daysLeft % (day)) / (hour)),
             document.getElementById("minutes").innerText = Math.floor((daysLeft % (hour)) / (minute)),
             document.getElementById("seconds").innerText = Math.floor((daysLeft % (minute)) / second);
-        //do something later when date is reached
+
         if (daysLeft < 0) {
+		document.getElementById("days").innerText = 0,
+            document.getElementById("hours").innerText = 0,
+            document.getElementById("minutes").innerText = 0,
+            document.getElementById("seconds").innerText = 0;
           let headline = document.getElementById("headline"),
               countdown = document.getElementById("countdown"),
               content = document.getElementById("content");
@@ -30,4 +34,3 @@
 		}
       }, 0)
   }());
-
